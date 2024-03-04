@@ -1,5 +1,4 @@
-Problem Statement
-Business problem overview
+**Business problem overview:**
 In the telecom industry, customers are able to choose from multiple service providers and actively switch from one operator to another. In this highly competitive market, the telecommunications industry experiences an average of 15-25% annual churn rate. Given the fact that it costs 5-10 times more to acquire a new customer than to retain an existing one, customer retention has now become even more important than customer acquisition.
 
  
@@ -16,7 +15,7 @@ In this project, you will analyse customer-level data of a leading telecom firm,
 
  
 
-Understanding and defining churn
+**Understanding and defining churn**
 There are two main models of payment in the telecom industry - postpaid (customers pay a monthly/annual bill after using the services) and prepaid (customers pay/recharge with a certain amount in advance and then use the services).
 
  
@@ -37,7 +36,7 @@ This project is based on the Indian and Southeast Asian market.
 
  
 
-Definitions of churn
+**Definitions of churn**
 There are various ways to define churn, such as:
 
 Revenue-based churn: Customers who have not utilised any revenue-generating facilities such as mobile internet, outgoing calls, SMS etc. over a given period of time. One could also use aggregate metrics such as ‘customers who have generated less than INR 4 per month in total/average/median revenue’.
@@ -60,7 +59,7 @@ In this project, you will use the usage-based definition to define churn.
 
  
 
-High-value churn
+**High-value churn**
 In the Indian and the Southeast Asian market, approximately 80% of revenue comes from the top 20% customers (called high-value customers). Thus, if we can reduce churn of the high-value customers, we will be able to reduce significant revenue leakage.
 
  
@@ -69,7 +68,7 @@ In this project, you will define high-value customers based on a certain metric 
 
  
 
-Understanding the business objective and the data
+**Understanding the business objective and the data**
 The dataset contains customer-level information for a span of four consecutive months - June, July, August and September. The months are encoded as 6, 7, 8 and 9, respectively. 
 
 
@@ -77,7 +76,7 @@ The business objective is to predict the churn in the last (i.e. the ninth) mont
 
  
 
-Understanding customer behaviour during churn
+**Understanding customer behaviour during churn**
 Customers usually do not decide to switch to another competitor instantly, but rather over a period of time (this is especially applicable to high-value customers). In churn prediction, we assume that there are three phases of customer lifecycle :
 
 The ‘good’ phase: In this phase, the customer is happy with the service and behaves as usual.
@@ -91,25 +90,6 @@ The ‘churn’ phase: In this phase, the customer is said to have churned. You 
 In this case, since you are working over a four-month window, the first two months are the ‘good’ phase, the third month is the ‘action’ phase, while the fourth month is the ‘churn’ phase.
 
  
-
-Data dictionary
-The dataset can be download using this link. The data dictionary is provided for download below.
-
-Data Dictionary - Telecom Churn
-Download
-The data dictionary contains meanings of abbreviations. Some frequent ones are loc (local), IC (incoming), OG (outgoing), T2T (telecom operator to telecom operator), T2O (telecom operator to another operator), RECH (recharge) etc.
-
- 
-
-The attributes containing 6, 7, 8, 9 as suffixes imply that those correspond to the months 6, 7, 8, 9 respectively.
-
- 
-
-Data Preparation
-The following data preparation steps are crucial for this problem:
-
- 
-
 1. Derive new features
 
 This is one of the most important parts of data preparation since good features are often the differentiators between good and bad models. Use your business understanding to derive features you think could be important indicators of churn.
@@ -143,7 +123,7 @@ After tagging churners, remove all the attributes corresponding to the churn pha
 
  
 
-Modelling
+Modelling:
 Build models to predict churn. The predictive model that you’re going to build will serve two purposes:
 
 It will be used to predict whether a high-value customer will churn or not, in near future (i.e. churn phase). By knowing this, the company can take action steps such as providing special plans, discounts on recharge etc.
